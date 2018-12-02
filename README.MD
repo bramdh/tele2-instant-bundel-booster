@@ -1,4 +1,4 @@
-![AppIcon](../master/app/src/main/res/mipmap/ic_launcher.png)
+![AppIcon](../master/app/src/main/res/mipmap-xxhdpi/ic_launcher.png)
 
 # Tele2 Instant BundelBooster
 
