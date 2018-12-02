@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:padding="@dimen/activity_horizontal_margin"
     android:background="@color/colorPrimary"
-    tools:context="com.bramdehart.tele2InstantBundelBooster.MainActivity">
+    tools:context="com.bramdehart.tele2instantbundelbooster.MainActivity">
 
     <ImageView
         android:layout_width="150dp"

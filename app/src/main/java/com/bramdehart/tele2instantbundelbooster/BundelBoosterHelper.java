@@ -1,4 +1,4 @@
-package com.bramdehart.tele2InstantBundelBooster;
+package com.bramdehart.tele2instantbundelbooster;
 
 import android.telephony.SmsManager;
 

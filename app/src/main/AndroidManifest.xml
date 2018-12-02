@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.bramdehart.tele2InstantBundelBooster">
+    package="com.bramdehart.tele2instantbundelbooster">
 
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.READ_SMS" />
@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
 
-        <activity android:name="com.bramdehart.tele2InstantBundelBooster.MainActivity">
+        <activity android:name="com.bramdehart.tele2instantbundelbooster.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,7 +22,7 @@
         </activity>
 
         <receiver
-            android:name="com.bramdehart.tele2InstantBundelBooster.SmsBroadcastReceiver"
+            android:name="com.bramdehart.tele2instantbundelbooster.SmsBroadcastReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter android:priority="1000">
