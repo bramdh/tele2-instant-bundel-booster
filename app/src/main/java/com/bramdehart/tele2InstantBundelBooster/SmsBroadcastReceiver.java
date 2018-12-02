@@ -1,11 +1,10 @@
-package com.joaquimley.smsparsing;
+package com.bramdehart.tele2InstantBundelBooster;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.provider.Telephony;
 import android.telephony.SmsMessage;
-import android.util.Log;
 import android.widget.Toast;
 
 /**
@@ -22,13 +21,13 @@ public class SmsBroadcastReceiver extends BroadcastReceiver {
             String smsBody = "";
             for (SmsMessage smsMessage : Telephony.Sms.Intents.getMessagesFromIntent(intent)) {
                 smsBody += smsMessage.getMessageBody();
+                smsSender = smsMessage.getOriginatingAddress();
             }
 
-            if (smsBody.startsWith(SmsHelper.SMS_CONDITION)) {
-                Log.d(TAG, "Sms with condition detected");
-                Toast.makeText(context, "BroadcastReceiver caught conditional SMS: " + smsBody, Toast.LENGTH_LONG).show();
+            if (BundelBoosterHelper.isDataWarning(smsSender, smsBody)) {
+                BundelBoosterHelper.sendBundelBoosterSms();
+                Toast.makeText(context, "Activated Tele2 Unlimited Bundel Booster", Toast.LENGTH_LONG).show();
             }
-            Log.d(TAG, "SMS detected: From " + smsSender + " With text " + smsBody);
         }
     }
 }

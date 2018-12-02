@@ -1,4 +1,4 @@
-package com.joaquimley.smsparsing;
+package com.bramdehart.tele2InstantBundelBooster;
 
 import org.junit.Test;
 

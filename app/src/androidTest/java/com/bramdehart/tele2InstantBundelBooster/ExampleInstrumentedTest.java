@@ -1,4 +1,4 @@
-package com.joaquimley.smsparsing;
+package com.bramdehart.tele2InstantBundelBooster;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
